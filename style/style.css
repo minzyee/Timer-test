@@ -167,7 +167,7 @@ body {
 /* 푸터 */
 footer {
   color: #8596BF;
-  position: fixed;
+  position: absolute;
   bottom: 103px;
   font-weight: 400;
 }
