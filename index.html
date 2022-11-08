@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타이머 구현하기</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1 class="logo">
+        <img src="./images/weniv-logo.svg" alt="Weniv">
+      </h1>
+    </header>
+    <article class="timer-box">
+      <h2 class="timer-tit">TIMER</h2>
+      <div class="timer-func-wrap">
+        <ul class="timer-func">
+          <li>
+            <p>HRS</p>
+            <!-- <strong>00</strong> -->
+            <input type="text" class="hrs" placeholder="00">
+          </li>
+          <li>
+            <p>MIN</p>
+            <!-- <strong>00</strong> -->
+            <input type="text" class="min" placeholder="00">
+          </li>
+          <li>
+            <p>SEC</p>
+            <!-- <strong>00</strong> -->
+            <input type="text" class="sec" placeholder="00">
+          </li>
+        </ul>
+        <div class="timer-btn-wrap">
+          <button type="button" class="startBtn pauseBtn">START</button>
+          <button type="reset" class="resetBtn">RESET</button>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <h2 class="blind">주식회사 위니브</h2>
+      <p>ⓒ WENIV Corp.</p>
+    </footer>
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>

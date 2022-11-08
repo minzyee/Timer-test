@@ -1,0 +1,173 @@
+/* 폰트 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+
+
+/* 리셋 CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+}
+
+
+/* 레이아웃 */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  
+}
+
+
+/* 헤더 */
+.header {
+  margin-top: 72px;
+}
+
+.logo {
+  width: 244px;
+  text-align: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+
+/* 아티클 - 타임박스 */
+.timer-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 360px;
+  background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+  padding: 48px 58px 40px;
+  text-align: center;
+}
+
+.timer-tit {
+  color: #fff;
+  padding-bottom: 23px;
+  margin-bottom: 33px;
+  border-bottom: 1px solid #3D538A;
+}
+
+.timer-func {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.timer-func li p {
+  font-size: 12px;
+  color: #A5B6EE;
+  margin-bottom: 4px;
+}
+
+.timer-func li input::placeholder {
+  color: #fff;
+}
+
+.hrs,
+.min,
+.sec {
+  display: block;
+  width: 80px;
+  height: 80px;
+  font-family: "Pretendard Variable";
+  font-size: 40px;
+  font-weight: 700;
+  background: url(../images/box.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  border: none;
+  text-align: center;
+  
+}
+
+.timer-btn-wrap button {
+  width: 112px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  background-color: #324577;
+  color: #617199;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  text-indent: 14px;
+  cursor: pointer;
+}
+
+.startBtn {
+  background-image: url(../images/icon-start-disabled.png);
+  margin-right: 12px;
+}
+
+.pauseBtn.on {
+  background-image: url(../images/icon-stop.png);
+  background-color: #15C2B8;
+  margin-right: 12px;
+  color: #fff;
+}
+
+.startBtn.on {
+  background-image: url(../images/icon-start.png);
+  background-color: #5180FF;
+  color: #fff;
+}
+
+.resetBtn {
+  background-image: url(../images/icon-reset-disabled.png);
+}
+
+.resetBtn.on {
+  background-image: url(../images/icon-reset.png);
+  color: #fff;
+  background-color: #FB7099;
+}
+
+
+/* 푸터 */
+footer {
+  color: #8596BF;
+  position: fixed;
+  bottom: 103px;
+  font-weight: 400;
+}
